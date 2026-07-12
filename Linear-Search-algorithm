@@ -1,0 +1,83 @@
+Q: Linear Search algorithm code in java Programming:
+
+What is a linear search:
+ans:Linear search is the simplest way to find an element in a list or array.
+
+It works by checking each element one by one from the beginning until:
+
+the target element is found, or
+the list ends (meaning the element isn’t present)
+
+How it works:
+1.Start from the first element
+2.Compare it with the target value
+3.If it matches → return its position
+4.If not → move to the next element
+5.Repeat until found or list ends
+
+
+package linearsearch;
+
+import java.util.*;
+
+public class LinearSearch {
+     public static void main(String[] args) {
+         //variable initialization
+         int n,i,key,c=0;
+         //input array
+         int[] a;
+         Scanner sc=new Scanner(System.in);
+         System.out.println("How many element do you want to enter");
+         n=sc.nextInt();
+         a=new int[n];
+         
+         System.out.println("Enter Elements");
+         
+         //loop for array
+         for(i=0; i<n; i++){
+             a[i]=sc.nextInt();
+         }
+         System.out.println("Enter item to find:");
+         key=sc.nextInt();
+         
+         //loop to itrate or check key 
+         for(i=0; i<a.length; i++){
+             if(a[i]==key)
+             {
+                 c++;
+                 break;
+             }
+         }
+         
+         //to check key match with array element or not 
+        if(c>0){
+            
+            System.out.println("item exist at index="+i);
+             }
+        else{
+            System.out.println("item does not exist" );
+             }
+         
+         
+     }
+}
+
+OUTPUT:
+
+How many element do you want to enter
+5
+Enter Elements
+10
+20
+30
+40
+50
+Enter item to find:
+40
+item exist at index=3
+
+
+  
+    
+     
+    
