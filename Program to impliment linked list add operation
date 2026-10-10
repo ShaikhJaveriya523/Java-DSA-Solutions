@@ -1,0 +1,20 @@
+Q: Program to impliment linked list add operation
+import java.util.*;
+
+public class Main {
+
+    public static void main(String args[])
+    {
+        LinkedList<String> ll = new LinkedList<>();
+
+        ll.add("Hello");
+        ll.add("Student");
+        ll.add(1, "CSE");
+
+
+        System.out.println(ll);
+    }
+}
+
+OUTPUT:
+[Hello, CSE, Student]
